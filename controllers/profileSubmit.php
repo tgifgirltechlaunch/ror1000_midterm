@@ -27,23 +27,21 @@
             // create array with new values
             $new = ['pass'=>$pass, 'img'=>$img];
  
+            //search for matching record
             foreach($content as $item)
             {
                 if($item['email'] == $tempEmail){
                     $content[$tempEmail] = ['pass'=>$pass, 'img'=>$img]; 
                 }
             }
-            
-            // print_r($content); //show all records
-            // exit;
 
             // change the session data
             $_SESSION = ['email'=>$email, 'pass'=>$pass, 'img'=>$img];
-            // save the changes in a file
+
+            // serialize content
             $session = serialize($content);
             
-            
-            // serialize(file_put_contents('../database.db', $session));
+            //save the changes in a file
             file_put_contents('../database.db', $session);
 
             //redirect to profile after saving data

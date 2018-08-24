@@ -2,7 +2,6 @@
     // get values from the url
     $email = $_POST['email'];
     $pass = $_POST['pass'];
-    $session = "";
 
     // validate user values
     if( ! filter_var($email, FILTER_VALIDATE_EMAIL)){
@@ -15,10 +14,12 @@
         $pass = md5($_POST['pass']);
         if(file_exists('../database.db')) {
             //get contents from database.db file and assign to variable unserialized
-            $content = file_get_contents('../database.db');
+            $content = unserialize(file_get_contents('../database.db'));
+            
+            $fileArr = $content;
             // print_r($content);//show selected record
             // exit;
-            $fileArr = unserialized($content);
+
             //check if file is empty, if it is, login failed redirect with error message
             if (empty($content)) {
                 // send back with file empty error

@@ -23,6 +23,7 @@
             $pass = md5($_POST['pass']);
 
             if(file_exists('../database.db')) {
+                //make the serialized file string into a value array
                 $content = unserialize(file_get_contents('../database.db'));
                 
                 if(is_array($content) && in_array ($email, $content)) {
@@ -33,11 +34,13 @@
                     //place email, password, img URL in an array
                     $arr = ['email'=>$email, 'pass'=>$pass, 'img'=>$img];
                     
+                    //add data to array
                     $content[$email]=$arr;
                     
+                    //serialize array
                     $newcontent = serialize($content);
 
-                    //serialize array and append to file database.db contents, lock flag prevents file from being used while saving
+                    //place new content in file
                     file_put_contents('../database.db', $newcontent );
 
                     // pull user info from the file and assign to session variable
