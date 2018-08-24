@@ -1,0 +1,187 @@
+body{
+    padding: 0;
+    margin: 0;
+    color: #000;
+    font-size: 16px;
+    background: url('../images/bg3.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1{
+    font-family: Cairo;
+    color: #616161;
+    text-align: center;
+}
+#active{
+    color:#616161;
+}
+#welcome{
+    text-align: center;
+    padding: 20px;
+}
+.container{
+    position: relative;
+    background-color: transparent;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+.logincontainer{
+    position: relative;
+    max-width: 500px;
+    padding: 40px;
+    background-color: #c2c2c2;
+    margin: 0 auto;
+}
+.padtop{padding-top: 20px;}
+.padtop a{color: #fff;}
+.padtop a:hover{color: #616161;}
+
+.frmlogin{
+    padding: 10px;
+    margin-top: 20px 10px 10px 10px;
+}
+
+.frmsignup{
+    padding: 10px;
+    margin-top: 20px 10px 10px 10px;
+}
+
+.btn-primary{
+    margin-top: 20px;
+}
+
+.btn-primary, 
+.btn-group .btn.active,.btn-primary:not(:disabled):not(.disabled):focus {
+    margin-top: 20px;
+    background-color: #616161;
+    border: 1px solid #616161;
+    box-shadow: none;
+    outline: none;
+}
+.form-control{
+    max-width: 260px;
+}
+.col-form-label{
+    padding-right: 20px;
+}
+
+input[type="submit"] {
+    font-family: FontAwesome;
+    font-size: 1.3333333333333333em;
+    background-color: #616161;
+    border: 1px solid #616161;
+}
+input[type="submit"]:hover {
+    background-color: #616161;
+    border: 1px solid #616161;
+}
+input[type="submit"]:active {
+    background-color: #616161;
+    border: 1px solid #616161;
+}
+input[type="submit"]:focus {
+    background-color: #616161;
+    border: 1px solid #616161;
+}
+input[type="submit"]:visited {
+    background-color: #616161;
+    border: 1px solid #616161;
+}
+.input-group {
+    margin-top: 10px;
+  }
+
+.input-group-text{
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: #fff;
+    background-color: #616161;
+    border: 1px solid #616161;
+}
+
+.navbar-custom{
+    background-color: #c2c2c2;
+    width: 100vw;
+    color: #000;
+    font-size: 100%;
+    display:flex;
+    justify-content:flex-end;
+}
+.navbar-custom a{
+    color: #fff;
+    font-size: 100%;
+    padding-right: 20px;
+}
+.left {
+    margin-left: auto;
+}
+.navbar-custom a:hover{
+    color: #616161;;
+}
+
+#topbar{
+    max-height: 50px;
+    min-width: 100vw;
+    background-color: #616161;
+    margin-bottom: 20px;
+    margin-left: -15px;
+}
+#topbar span{
+    font-size: 100%;
+    display: flex;
+    justify-content: start;
+    padding-left: 15px;
+    color: #fff;
+}
+.homewrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.homeimg{
+    margin: 0 auto;
+}
+.homeimg img{
+    max-width: 200px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+.homemain{
+    flex: 4;
+}
+.profileimg img{
+    max-width: 200px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    background-color: #f8f5f5;
+    min-height: 300px;
+    margin: 0 auto;
+}
+
+.innerWrapper {
+    display: flex;
+    min-height: 300px;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 80%;
+}
+
+.box {
+    opacity: 0.8;
+    background-color: #c2c2c2;
+    padding: 25px;
+    margin: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
